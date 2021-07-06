@@ -31,6 +31,7 @@
   },
   "defaultProject": "portfolio",
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": false
   }
 }

@@ -21,6 +21,10 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
           canActivate: [UserRouteAccessService],
           loadChildren: () => import('./admin/admin-routing.module').then(m => m.AdminRoutingModule),
         },
+        {
+          path: 'eshopping',
+          loadChildren: () => import('./subpage/eshopping/eshopping.module').then(m => m.EshoppingModule),
+        },
         ...LAYOUT_ROUTES,
       ],
       { enableTracing: DEBUG_INFO_ENABLED }
